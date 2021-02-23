@@ -21,3 +21,6 @@ python_version = "3.9"
 
 [scripts]
 tests = "pytest"
+lint = "pylint `find . -iname '*.py'`"
+tests-cov = "coverage run -m pytest"
+cov-report = "coverage report -m"

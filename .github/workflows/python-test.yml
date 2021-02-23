@@ -22,10 +22,10 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         # Stop run if there are linting errors
-        pipenv run pylint `find . \( -iname '*.py' \)`
+        pipenv run lint
     - name: Test with pytest with coverage
       run: |
-        pipenv run coverage run -m pytest
-    - name: Publish coverage to html
+        pipenv run tests-cov
+    - name: Generate coverage report
       run: |
-        pipenv coverage report -m 
+        pipenv run cov-report
