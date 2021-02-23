@@ -4,6 +4,9 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pytest = "*"
+pylint = "*"
+coverage = "*"
 
 [packages]
 discord = "*"
@@ -14,4 +17,7 @@ asyncio = "*"
 pytz = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.9"
+
+[scripts]
+tests = "pytest"
