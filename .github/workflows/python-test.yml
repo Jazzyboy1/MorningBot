@@ -18,6 +18,7 @@ jobs:
         pip install pylint
         pip install coverage
         pip install pytest
+        pip install python-dotenv
         pipenv install
     - name: Analysing the code with pylint
       run: |
