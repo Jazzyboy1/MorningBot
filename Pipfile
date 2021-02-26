@@ -17,10 +17,10 @@ asyncio = "*"
 pytz = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.8"
 
 [scripts]
 tests = "pytest"
-lint = "pylint `find $PWD -iname \\\"*.py\\\"`"
+lint = "bash ./scripts/pylint-run.sh"
 tests-cov = "coverage run -m pytest"
 cov-report = "coverage report -m"
